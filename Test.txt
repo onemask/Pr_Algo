@@ -1,0 +1,8 @@
+
+
+
+
+ # intellIJ Project  
+ # clone 해서 가져온 파일을 고치고 다시 git push origin master 하면 
+왜 안 바뀜? 권한이 없다고 그르는데 
+그럴것 같기도하지만 .. 그러하네 . 
