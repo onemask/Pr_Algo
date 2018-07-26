@@ -1,23 +1,24 @@
 /***
- * 25 _ while
+ * 29 _ ****Lable 사용. 
  *
  ***/
 
 
 fun main(args:Array<String>):Unit {
 
-  var i =1;
+    var x=0
+    var y=0
 
-    while (i<10){
-        i+=1
-        if(i%2==0)
-            continue //continue 아래의 문장을 모두 skip 한다.
-            print(i)
-
-
+    outer@ while(x<=20){
+        y=0
+        while(y<=20){
+            if(x+y == 15 && x-y ==5)
+                break@outer
+            y+=1
+        }
+        x+=1
     }
-
-
+    println("x : $x, y : $y")
 
     //(kotlin에서 Unit은 무엇을 말하는겨?
 
