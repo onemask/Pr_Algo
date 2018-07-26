@@ -1,20 +1,26 @@
 /***
- * if 블록과 else 블록의 마지막 표현식 타입은 일치해야한다.
- * if 블록의 마지막 표현식이 Int타입이였으면 else 블록또한 마찬가지.
- */
+ *  23 _ when if
+ *  when (비교할 대상 선언)
+ *  찾으면 밖으로 나온다.
+ *
+ * */
 
 
 fun main(args:Array<String>):Unit {
 
-   val value : Int = if (10 >5) {
-       println("10은 5보다 크다.")
-       10
-   }
-    else{
-       println("10은 5보다 크지 않다.")
-        5
-   }
-    print(value)
+   val score = 99
+
+    when (score/ 10){           //비교의 대상이 되는 타깃을 정한다.
+
+        6->{println("D")}   //score/10 ==6 인지.
+        7->{println("C")}
+        8->{println("B")}
+        9,10->{println("A")} //쉼표를 이용하여 값 여러개를 지정할 수 있다.
+        else ->{println("F")} // 아무것도 아닐때.
+    }
+    println("Test")
+
+
 
 }
 
