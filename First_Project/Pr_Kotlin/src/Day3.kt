@@ -1,30 +1,18 @@
 /***
- *  32_ 가변인수.
- *
+ *  37_ 지역변수와 전역변수의 이름이 중복될때.
  */
 
-
-
-
+var a=5     //전역.
 
 fun main (args: Array<String>) {
-
-    println(getSumOf2(1,2,3))
-    println(getSumOf2(4,5,6))
-    println(getSumOf(7,8,9)) //<-이것도 출력 되나여?
+    val a=30
+    println(a)      //가장 가까운 스코프의 변수 출력. 
+    func()
 
 
 }
 
-fun getSumOf2(vararg numbers: Int ):Int{
-
-    val count = numbers.size;
-    var i =0; var sum=0
-
-    while(i<count){
-        sum+=numbers[i]
-        i+=1
-    }
-
-    return sum;
+fun func() {
+    println(a)
 }
+
