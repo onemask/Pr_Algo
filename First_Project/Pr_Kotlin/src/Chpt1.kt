@@ -1,20 +1,24 @@
-
-typealias  Number = Int
-
-
-fun main (args:Array<String>): Unit {
-
-
-    println("prefix란 '${"집에가고싶다".startsWith("집")}'   ")
-    //println("prefix란 '${"집에가고싶다".prefix("집")}'   ")
-
-}
-
-
-fun prefix(x:Any)=when(x){
-    is String -> x.startsWith("prefix")
-    else -> false
-}
-
-
-
+//package ex_package
+//import ex_func.*
+//
+//// Chapt 58. 프로퍼티 Geter와 Setter.
+//class  Chpt1(var x=0,var y=0){
+//
+//    operator fun plus(other:Point):Point{
+//        return Point(x + other.x ,y + other.y)
+//    }
+//    operator fun minus(other:Point):Point{
+//        return Point(x-other.x,y -other.y)
+//    }
+//    operator fun times(number: Int):Point{
+//        return Point(x * number,y*number)
+//    }
+//    operator fun div(number:Int):Point{
+//        return Point(x / number,y/number)
+//    }
+//
+//    fun print(){
+//        println ("x :$x, y:$y " )
+//    }
+//}
+//
