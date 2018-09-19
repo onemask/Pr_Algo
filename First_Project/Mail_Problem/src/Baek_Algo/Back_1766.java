@@ -12,15 +12,13 @@ public class Back_1766 {
         int M = sc.nextInt();
 
         int[] indegree = new int[N + 1];
-        LinkedList[] link = new LinkedList[N + 1];
+        LinkedList<Integer> link[] = new LinkedList[N + 1];
 
-        //이 과정이 필요할까?
         for (int i = 1; i < N + 1; i++) {
             indegree[i] = 0;
             link[i] = new LinkedList<>();
         }
 
-        //연결?
         for (int i = 0; i < M; i++) {
             int from = sc.nextInt();
             int to = sc.nextInt();
@@ -40,15 +38,11 @@ public class Back_1766 {
 
         while (!q.isEmpty()) {
             int now = (int) q.poll();
-            System.out.print(now + " ");
-
-            for (int i=0;i<link[now].size();i++){
-
-                int node = (int) link[now].get(i);
+            for (int node : link[now]){
                 indegree[node]--;
-
                 if(indegree[node]==0){
                     q.add(node);
+                    System.out.print(node + " ");
 
                 }
             }

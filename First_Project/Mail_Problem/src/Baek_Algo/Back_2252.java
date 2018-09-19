@@ -34,7 +34,7 @@ public class Back_2252 {
         }
 
 
-        LinkedList<Integer> q =new LinkedList<>();
+        PriorityQueue<Integer> q =new PriorityQueue<>();
 
         for (int i=1;i<N+1;i++) {
             //q에 값넣기
@@ -44,6 +44,7 @@ public class Back_2252 {
             }
         }
 
+        //DFS, QUEU
         //form -> to 대로 출력.
         while(!q.isEmpty()) {
             int root = q.poll();
