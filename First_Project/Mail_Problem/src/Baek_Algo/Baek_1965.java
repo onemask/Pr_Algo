@@ -1,34 +1,50 @@
 package Baek_Algo;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
-import static Baek_Algo.Baek_11726.dp;
 
 public class Baek_1965 {
 
     static int[] dp = new int[10001];
-    static int[] arr;
-    static Scanner sc = new Scanner(System.in);
+    static int[] arr = new int[10001];
+    static BufferedReader br;
+    static StringTokenizer st;
 
-    public static void main(String[] args) {
 
-        int n = sc.nextInt();
+    public static void main(String[] args) throws IOException{
+
+        br  = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
         arr = new int[n];
+        int max = 0 ;
 
-        for (int i = 0; i < n; i++)
-            arr[i] = sc.nextInt();
+        //input arr
+        st= new StringTokenizer(br.readLine());
+        for (int i = 0; i <n; i++)
+            arr[i] = Integer.parseInt(st.nextToken(" "));
 
-        DP(n);
 
-    }
+        dp[0]=1;
 
-    static private int DP(int n) {
-
-        for (int i = 2; i <= n; i++) {
-            if (arr[i - 2] < arr[i - 1]) {
-                dp[i - 2] = 1;
+        for(int i=1;i<n;i++){
+            dp[i]=1;
+            for(int j=0;j<i;j++){
+                if(arr[i] >arr[j] && dp[j]+1 > dp[i]){
+                    //증가 수열
+                    dp[i]= dp[j]+1;
+                }
             }
+
+            if(max < dp[i])
+                max = dp[i];
         }
-        return 1;
+
+        System.out.println(max);
     }
 }
+
+

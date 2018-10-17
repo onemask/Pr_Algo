@@ -29,15 +29,18 @@ public class Baek_9465 {
                 }
             }
 
-            dp[0][1] = arr[0][1];
-            dp[1][1] = arr[1][1];
+            dp[0][0] = arr[0][0];
+            dp[1][0] = arr[1][0];
 
-                for(int j=2;j<n;++j){
+            dp[0][1] =arr[0][1]+arr[1][0];
+            dp[1][1] =arr[1][1]+arr[0][0];
+
+                for(int j=2;j<n;j++){
                     dp[0][j]=Math.max(dp[1][j-1],dp[1][j-2])+arr[0][j];
                     dp[1][j]=Math.max(dp[0][j-1],dp[0][j-2])+arr[1][j];
                 }
-                System.out.println(Math.max(dp[0][n],dp[1][n]));
-            }
+            System.out.println(Math.max(dp[0][n-1],dp[1][n-1]));
+        }
 
 
 
@@ -55,15 +58,6 @@ public class Baek_9465 {
         }
 
 
-//    public void input(int n) throws IOException{
-//        int n = Integer.parseInt(br.readLine());
-//        for (int i = 0; i < 2; i++) {
-//            StringTokenizer st = new StringTokenizer(br.readLine());
-//            for (int j = 0; j < n; j++) {
-//                arr[i][j] = Integer.parseInt(st.nextToken());
-//            }
-//        }
-//    }
 
 
 }
