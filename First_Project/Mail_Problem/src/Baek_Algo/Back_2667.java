@@ -19,7 +19,6 @@ public class Back_2667 {
 
     public static void main(String[]args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //N = Integer.parseInt(br.readLine());
 
         Scanner sc =new Scanner(System.in);
         N = sc.nextInt();
@@ -59,13 +58,7 @@ public class Back_2667 {
         }
 
 
-//        //Output
-//        for (int i=0;i<N;i++) {
-//            for (int j = 0; j <N; j++) {
-//                System.out.print(adj[i][j]);
-//            }
-//            System.out.println();
-//        }
+
 
 
     }
@@ -85,6 +78,17 @@ public class Back_2667 {
                     dfs(xx,yy);
             }
         }
+    }
+
+    public void print(){
+                //Output
+        for (int i=0;i<N;i++) {
+            for (int j = 0; j <N; j++) {
+                System.out.print(adj[i][j]);
+            }
+            System.out.println();
+        }
+
     }
 
 
