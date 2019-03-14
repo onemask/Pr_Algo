@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf530c83-61da-4f2c-bedf-3bb86eea550e" name="Default Changelist" comment="">
+    <list default="true" id="bf530c83-61da-4f2c-bedf-3bb86eea550e" name="Default Changelist" comment="leet_two_sum Done.">
+      <change afterPath="$PROJECT_DIR$/src/Reverse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo/Baek_2455Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/Baek_2455Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/Leet_Two_sumKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/Leet_Two_sumKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algo/META-INF/Algo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/META-INF/Algo.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mail_03_10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mail_03_10.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leet_Two_sum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/leet_Two_sum.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,11 +31,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leet_Two_sum.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mail_03_10.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Reverse.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -40,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Arrays.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="3774" column="20" selection-start-line="3774" selection-start-column="20" selection-end-line="3774" selection-end-column="20" />
+            <state relative-caret-position="262">
+              <caret line="741" column="27" selection-start-line="741" selection-start-column="27" selection-end-line="741" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -77,12 +98,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/Baek_2455.kt" />
         <option value="$PROJECT_DIR$/src/leet_Two_sum.kt" />
+        <option value="$PROJECT_DIR$/src/Mail_03_10.kt" />
+        <option value="$PROJECT_DIR$/src/Reverse.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="733" />
-    <option name="y" value="34" />
+    <option name="x" value="143" />
+    <option name="y" value="55" />
     <option name="width" value="882" />
     <option name="height" value="988" />
   </component>
@@ -118,7 +141,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552200962808" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552569001480" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.Leet_Two_sumKt">
+  <component name="RunManager" selected="Kotlin.Mail_03_10Kt">
     <configuration name="Baek_2455Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Algo" />
       <option name="VM_PARAMETERS" />
@@ -159,8 +182,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Mail_03_10Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Algo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Mail_03_10Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Mail_03_10Kt" />
         <item itemvalue="Kotlin.Leet_Two_sumKt" />
         <item itemvalue="Kotlin.Baek_2455Kt" />
         <item itemvalue="Kotlin.Baek_2455Kt" />
@@ -192,14 +229,20 @@
       <option name="project" value="LOCAL" />
       <updated>1552121475637</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mail Programming 문제.">
+      <created>1552211357203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552211357203</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12759463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12759463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -208,14 +251,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6617827" visible="true" weight="0.3010204" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4945055" weight="0.3989796" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65995115" weight="0.32857144" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4932845" weight="0.3642857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.70238096" weight="0.32924107" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.33821735" side_tool="true" visible="true" weight="0.3010204" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7008547" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.2991453" side_tool="true" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.46336997" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -230,7 +273,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workspace change" />
     <MESSAGE value="leet_two_sum Done." />
-    <option name="LAST_COMMIT_MESSAGE" value="leet_two_sum Done." />
+    <MESSAGE value="Mail Programming 문제." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mail Programming 문제." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Baek_2455.kt">
@@ -250,17 +294,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Arrays.kt">
+    <entry file="file://$PROJECT_DIR$/src/leet_Two_sum.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="3774" column="20" selection-start-line="3774" selection-start-column="20" selection-end-line="3774" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_Two_sum.kt">
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Arrays.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="262">
+          <caret line="741" column="27" selection-start-line="741" selection-start-column="27" selection-end-line="741" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mail_03_10.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reverse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>

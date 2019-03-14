@@ -4,13 +4,13 @@ fun main(args: Array<String>) {
     val target = 5
 
     fun solution(args: IntArray, target: Int): Int {
-
         args.find { it.equals(target) }?.run {
             return 1
-        }?: run {
+        } ?: run {
             return -1
         }
     }
-
-    println(solution(input,target))
+    println(solution(input, target))
 }
+
+

@@ -18,46 +18,10 @@ fun main(arg: Array<String>) {
 
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
-        val inputArray: IntArray = nums
-        var arr: IntArray? = intArrayOf()
-        var operator: Int? = 0
-        var sameNum = 0
-
-        for (idx in inputArray.indices) {
-
-            if (arr?.size!! < 2) {
-                if (target > nums[idx]) {
-                    operator = target - inputArray[idx]
-                    for (idx2 in ((idx + 1)..inputArray.lastIndex))
-                        if (operator == inputArray[idx2]) {
-                            arr = arr?.plus(idx)
-                            arr = arr?.plus(idx2)
-                            break
-                        }
-                } else if (target < nums[idx]) {
-                    operator = target - inputArray[idx]
-                    for (idx2 in ((idx + 1)..inputArray.lastIndex))
-                        if (operator == inputArray[idx2]) {
-                            arr = arr?.plus(idx)
-                            arr = arr?.plus(idx2)
-                            break
-                        }
-
-                } else{
-                    operator = target - inputArray[idx]
-                    for (idx2 in ((idx + 1)..inputArray.lastIndex))
-                        if (operator == inputArray[idx2]) {
-                            arr = arr?.plus(idx)
-                            arr = arr?.plus(idx2)
-                            break
-                        }
-                }
-            }
-
-        }
-
-
-        return arr!!
+        for(i in 0 until nums.size - 1)
+            for(j in i + 1 until nums.size)
+                if(nums[i]+nums[j] == target)return intArrayOf(i,j)
+        return intArrayOf()
     }
 }
 
