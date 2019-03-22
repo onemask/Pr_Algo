@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
         add(listOf("white", "9", "1000000000"))
     }
 
-    var answer: Long? 
+    var answer: Long?
     val a = readLine()
     val b = readLine()
     val c = readLine()
