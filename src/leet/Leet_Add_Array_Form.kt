@@ -1,17 +1,20 @@
+/*
 package leet
 
+*/
 /*
     Input: A = [1,2,0,0], K = 34
     Output: [1,2,3,4]
     Explanation: 1200 + 34 = 1234
-*/
+*//*
+
 
 
 
 class Leet_Add_Array_Form {
     fun addToArrayForm(A : IntArray, K:Int):List<Int>{
         var total : String =""
-        var answer_array = listOf()
+        //var answer_array = listOf()
 
         println("a is Iterable ${A.asIterable().iterator()}")
 
@@ -46,3 +49,4 @@ fun main(arg: Array<String>){
 
 
 }
+*/

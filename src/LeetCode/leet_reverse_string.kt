@@ -10,7 +10,7 @@ class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-class SwapNodes() {
+class SwapNodes {
     fun swapPairs(head: ListNode?): ListNode? {
         val seq = generateSequence(head) { it.next }
         fun swapNode(node1: ListNode, node2: ListNode) {
