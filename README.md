@@ -1,3 +1,3 @@
-# 
+# Algorithms and Data Structures
 
-# Purporse : 알고리즘을 작성에 쓰는 프로젝트.
+* [BOJ](https://www.acmicpc.net/)과 [Leet Code](https://leetcode.com/)의 문제를 바탕으로 진행된다. 
