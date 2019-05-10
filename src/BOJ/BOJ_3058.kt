@@ -1,23 +1,37 @@
 package BOJ
 
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.util.*
-
 fun main() {
 
-    val sc = Scanner(System.`in`)
-    val l = sc.nextInt()
-    val c = sc.nextInt()
+    var num = readLine()!!.toInt()
+    var answer  = mapOf<Int,Int>()
+    var idx = 0
 
-    val q = readLine()
-    val st = StringTokenizer(q," ")
 
-    while (st.hasMoreTokens()){
-        println(st.nextToken().toString())
+    while (num-- != 0) {
+
+        readLine()!!.split(" ").filter {
+            it.toInt() % 2 == 0
+        }.apply {
+            val result = this.map {
+                it.toInt()
+            }
+
+            println("sum ${result.sum()} min ${result.min()}")
+            //answer.put(result.sum(),result.min()!!)
+        }
+
+    }
+   /* println("answer is $answer")
+    println("key is ${answer.keys}")
+    println("answer is ${answer.values}")*/
+
+    println("size ${answer.size}")
+    answer.forEach { key, value -> println("$key $value")  }
+
+    for(i in 1 .. answer.size){
+        println("key ${answer.keys}")
+        //println("${answer[i]!!.toInt()} ${answer.get()!!.toInt()}")
     }
 
-
-
-
 }
+
